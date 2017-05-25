@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>message</title>
+<link rel="stylesheet"type="text/css"href="css/messageboard.css">
+<script src="http://upcdn.b0.upaiyun.com/libs/jquery/jquery-2.0.2.min.js">
+</script>
+</head>
+<body>
+
+<div class="main">
+
+<div class="header">
+<div class="h_logo"></div>
+</div>
+
+<style type="text/css">
+#s{width:960px;height:338px;overflow:hidden;position:relative;margin:30px auto;}
+#s .box{width:935px;height:430px;box-shadow:0px 0px 5px #ddd;margin:15px auto;overflow:hidden;position:relative;}
+#s .box img{width:960px;height:430px;position:absolute;left:0px;top:0px;opacity:0;filter:alpha(opacity=0);}
+#s .page{width:132px;height:22px;position:absolute;bottom:15px;right:50px;}
+
+#s .page a{display:inline-block;width:22px;height:22px;margin:0px 11px;float:left;color:#FFF;text-decoration:none;text-align:center;}
+</style>
+<script type="text/javascript">
+$(function(){
+  var aPage = $('#s .page a');    //分页按钮
+  var aImg = $('#s .box img');    //图像集合
+  var iSize = aImg.size();    //图像个数
+  var index = 0;    //切换索引
+  var t;
+  //分页按钮点击
+  aPage.click(function(){
+    index = $(this).index();
+    change(index)
+  });
+  //切换过程
+  function change(index){
+    aPage.removeClass('active');
+    aPage.eq(index).addClass('active');
+    aImg.stop();
+    //隐藏除了当前元素，所以图像
+    aImg.eq(index).siblings().animate({
+      opacity:0
+    },1000)
+    //显示当前图像
+    aImg.eq(index).animate({
+      opacity:1
+    },1000)
+  }   
+  function autoshow() {
+    index=index+1;
+    if(index<=iSize-1){
+       change(index);
+    }else{
+      index=0;
+      change(index);
+    }     
+  }
+  int=setInterval(autoshow,3000);
+})
+</script>
+<div class="contain">
+  <div class="nav">
+   <div id="s">
+     <div class="box">
+    <img style="opacity:1;filter:alpha(opacity=100);" src="images/banner1.jpg" />
+    <img src="images/banner3.jpg" /> <img src="images/banner9.jpg" /> </div>
+  <div class="page">
+    <a  href="javascript:void(0);">1</a>
+    <a href="javascript:void(0);">2</a>
+     <a href="javascript:void(0);">3</a>
+  </div>
+   </div>
+
+  </div>
+</div>
+
+<div class="contain show">
+<div class="gy_show">
+<div class="tit">
+<h3>留言板</h3>
+</div>
+
+
+<div class="gy_list">
+
+<div id="box">
+<div class="gy_li">
+<div class="gy_toux">
+<img src="images/h1.jpg"
+width="50"height="50"alt="个人头像">
+</div>
+<div class="gy_cont">
+<p class="cont_p">
+<a href="#">@王大怡</a>:将相拥而别，泪水是否会纵横满面？许多年后，谁与我共赴此约？谁与我重回三春湖畔？谁与我再返泛月桥边？谁与我同等钟声报点？
+此去一别经年，唯愿众人安好。
+</p>
+</div>
+<div class="clear"></div>
+</div>
+
+<div class="gy_li">
+<div class="gy_toux">
+<img src="images/h2.jpg"
+width="50"height="50"alt="个人头像">
+</div>
+<div class="gy_cont">
+<p class="cont_p">
+<a href="#">  @…   </a>:到这个时候了，才感受到分离的气味，愿相伴四年的我们越来越好！
+</p>
+</div>
+<div class="clear"></div>
+</div>
+
+<div class="gy_li">
+<div class="gy_toux">
+<img src="images/h3.jpg"
+width="50"height="50"alt="个人头像">
+</div>
+<div class="gy_cont">
+<p class="cont_p">
+<a href="#">@你好，旧时光   </a>:不舍的东西很多，带不走的感情有很多，四年的弹指一挥间。 
+</p>
+</div>
+<div class="clear"></div>
+</div>
+
+<div class="gy_li">
+<div class="gy_toux">
+<img src="images/h4.jpg"
+width="50"height="50"alt="个人头像">
+</div>
+<div class="gy_cont">
+<p class="cont_p">
+<a href="#">  @景林   </a>:离开才发现，最动听的是校歌。
+</p>
+</div>
+<div class="clear"></div>
+</div>
+
+<div class="gy_li">
+<div class="gy_toux">
+<img src="images/h5.jpg"
+width="50"height="50"alt="个人头像">
+</div>
+<div class="gy_cont">
+<p class="cont_p">
+<a href="#">  @柒  </a>:总以为毕业遥遥无期 ，如今就要各奔东西。
+</p>
+</div>
+<div class="clear"></div>
+</div>
+
+<div class="gy_li">
+<div class="gy_toux">
+<img src="images/h6.jpg"
+width="50"height="50"alt="个人头像">
+</div>
+<div class="gy_cont">
+<p class="cont_p">
+<a href="#"> @密谋生活</a>: 马鞭草花开依旧，六月份如期而至，游子游人如织，只是今夕非彼夕。
+</p>
+</div>
+<div class="clear"></div>
+</div>
+
+<div class="gy_li">
+<div class="gy_toux">
+<img src="images/h7.jpg"
+width="50"height="50"alt="个人头像">
+</div>
+<div class="gy_cont">
+<p class="cont_p">
+<a href="#"> @Fancy- </a>: 好好学专业课，好好考证，好好谈一场任性的恋爱，好好做一切你想做的，大学只有一次，且行且珍惜。
+</p>
+</div>
+<div class="clear"></div>
+</div>
+
+<div class="gy_li">
+<div class="gy_toux">
+<img src="images/h8.jpg"
+width="50"height="50"alt="个人头像">
+</div>
+<div class="gy_cont">
+<p class="cont_p">
+<a href="#"> @Thy  </a>:明日何其多，毕业方知无明日，惜爱恨皆晚矣。
+</p>
+</div>
+<div class="clear"></div>
+</div>
+
+<div class="gy_li">
+<div class="gy_toux">
+<img src="images/h9.jpg"
+width="50"height="50"alt="个人头像">
+</div>
+<div class="gy_cont">
+<p class="cont_p">
+<a href="#"> @忘了  </a>: 我怀念马鞭草的紫，三春湖的微风，校园里充满朝气的少年。
+</p>
+</div>
+<div class="clear"></div>
+</div>
+
+<div class="gy_li">
+<div class="gy_toux">
+<img src="images/h11.jpg"
+width="50"height="50"alt="个人头像">
+</div>
+<div class="gy_cont">
+<p class="cont_p">
+<a href="#">@ Betray</a>:  毕业一年。再看三春湖，真的忍不住眼里的泪，可能是因为刚好遇见你吧，重师。
+</p>
+</div>
+<div class="clear"></div>
+</div>
+
+<div class="gy_li">
+<div class="gy_toux">
+<img src="images/h14.jpg"
+width="50"height="50"alt="个人头像">
+</div>
+<div class="gy_cont">
+<p class="cont_p">
+<a href="#"> @如果 </a>: 愿我们都能变得更好！变成自己喜欢的样子。
+</p>
+</div>
+<div class="clear"></div>
+</div>
+
+<div class="gy_li">
+<div class="gy_toux">
+<img src="images/h15.jpg"
+width="50"height="50"alt="个人头像">
+</div>
+<div class="gy_cont">
+<p class="cont_p">
+<a href="#"> @默  </a>:初到时，满心欢喜；离别时，一身遗憾。若时光倒流，定会好好把你珍惜。（致重师）
+</p>
+</div>
+<div class="clear"></div>
+</div>
+
+<div class="gy_li">
+<div class="gy_toux">
+<img src="images/h17.jpg"
+width="50"height="50"alt="个人头像">
+</div>
+<div class="gy_cont">
+<p class="cont_p">
+<a href="#"> @幸福导弹</a>:  新的生活即将拉开帷幕！再见了，我亲爱的大学生活。再见了，我亲爱的小伙伴们。再见了，陪我成长过的重师老师们。我爱你们！
+</p>
+</div>
+<div class="clear"></div>
+</div>
+
+        <script language="javascript" type="text/javascript">
+window.onload=function(){
+    var o=document.getElementById('box');
+    window.setInterval(function(){scrollup(o,24,0);},5000); 
+
+}
+///滚动主方法
+///参数:o 滚动块对象
+///参数:d 每次滚屏高度
+///参数:c 当前已滚动高度
+function scrollup(o,d,c){
+    if(d==c){
+        var t=getFirstChild(o.firstChild).cloneNode(true);
+        o.removeChild(getFirstChild(o.firstChild));
+        o.appendChild(t);
+        t.style.marginTop="0px";
+    }else{
+        c+=2;
+        getFirstChild(o.firstChild).style.marginTop=-c+"px";
+        window.setTimeout(function(){scrollup(o,d,c)},20);
+    }
+}
+
+//解决firefox下会将空格回车作为节点的问题
+function getFirstChild(node){
+  while (node.nodeType!=1)
+  {
+         node=node.nextSibling;
+  }
+  return node;
+}
+</script>
+</div>
+</div>
+</div></div>
+<!--footer-->
+<div class="footer">
+     <p>&copy;Miss锦</p>
+    <p>邮箱：frightingtime@163.com</p>
+</div>
+
+<a href="#" id="toTop" style="display: block;"></a>
+</body>
+</html>

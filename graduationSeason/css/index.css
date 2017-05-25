@@ -1,0 +1,498 @@
+html, body{
+    font-size: 100%;
+	font-family: 'Open Sans', sans-serif;
+	background:#ffffff;
+	margin: 0;
+}
+p,ul li,ol li{
+	margin:0;
+	font-size:14px;
+}
+h1,h2,h3,h4,h5,h6{
+	font-family: 'Cabin Condensed', sans-serif;
+	margin:0;
+}
+ul,label{
+	margin:0;
+	padding:0;
+}
+body a:hover{
+	text-decoration:none;
+}
+/*-- banner --*/
+.banner{
+	background:url(../images/test.png) no-repeat 0px 0px;
+	background-size:cover;
+	-webkit-background-size:cover;
+	-moz-background-size:cover;
+	-o-background-size:cover;
+	-ms-background-size:cover;
+	min-height:700px;
+}
+/*-- nav --*/
+.navbar-default {
+    background: none;
+    border: none;
+}
+.navbar {
+    margin-bottom: 0;
+}
+.navbar-brand {
+    height: 65px;
+    padding: 20px 0 0;
+    font-size: 1.2em;
+    line-height: 45px;
+	background:url(../images/men.png) no-repeat 106px 8px;
+}
+.navbar-brand span {
+    line-height: 0.5;
+    color:#ff0101;
+    text-transform: capitalize;
+    transform: rotate(-150deg);
+	-webkit-transform: rotate(-150deg);
+	-moz-transform: rotate(-150deg);
+	-o-transform: rotate(-150deg);
+	-ms-transform: rotate(-150deg);
+    display: inline-block;
+}
+.navbar-default .navbar-brand,.navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
+    color:#0b0d0c;
+}
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+    color:#ff0101;
+    background: none;
+}
+.navbar-nav > li > a {
+	padding: 0;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-left: 136px;
+    line-height: 3;
+    letter-spacing: 2px;
+}
+.navbar-default .navbar-nav > li > a {
+    color:#0b0d0c;
+}
+.navbar-collapse {
+    padding: 0;
+    border-top: none;
+    box-shadow: none;
+}
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+    border: none;
+}
+.navbar-right {
+    float: left !important;
+    margin-right: 0;
+    margin-left: 0em;
+}
+.navbar-nav {
+    float: none;
+	margin: 1.8em 0 0;
+}
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+    color: #ff0101;
+}
+.nav > li > a {
+	font-family: 'Cabin Condensed', sans-serif;
+}
+.link--yaku {
+	overflow: hidden;
+}
+.link--yaku::before {
+	content: '';
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	border-width: 2px 0;
+	border-color: #ff0101;
+	border-style: solid;
+	left: 0;
+	-webkit-transform: translate3d(-101%,0,0);
+	transform: translate3d(-101%,0,0);
+	-webkit-transition: -webkit-transform 0.5s;
+	transition: transform 0.5s;
+}
+
+.link--yaku:hover::before {
+	-webkit-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+}
+
+.link--yaku span {
+	display: inline-block;
+	position: relative;
+	-webkit-transform: perspective(1000px) rotate3d(0,1,0,0deg);
+	transform: perspective(1000px) rotate3d(0,1,0,0deg);
+	-webkit-transition: -webkit-transform 0.5s, color 0.5s;
+	transition: transform 0.5s, color 0.5s;
+}
+
+.link--yaku:hover span {
+	color: #ff0101;
+	-webkit-transform: perspective(1000px) rotate3d(0,1,0,360deg);
+	transform: perspective(1000px) rotate3d(0,1,0,360deg);
+}
+
+.link--yaku span:nth-child(4),
+.link--yaku:hover span:first-child {
+	-webkit-transition-delay: 0s;
+	transition-delay: 0s;
+}
+
+.link--yaku span:nth-child(3),
+.link--yaku:hover span:nth-child(2) {
+	-webkit-transition-delay: 0.1s;
+	transition-delay: 0.1s;
+}
+
+.link--yaku span:nth-child(2),
+.link--yaku:hover span:nth-child(3) {
+	-webkit-transition-delay: 0.2s;
+	transition-delay: 0.2s;
+}
+
+.link--yaku span:first-child,
+.link--yaku:hover span:nth-child(4) {
+	-webkit-transition-delay: 0.3s;
+	transition-delay: 0.3s;
+}
+
+/*content*/
+.MessageBoard,.graduation,.team-bottom,.show{
+	padding:5em 0;
+}
+.w3l_head{
+	font-size: 2.5em;
+    font-weight: bold;
+    color: #212121;
+	letter-spacing: 3px;
+	text-align: center;
+}
+.w3ls_head_para{
+	color:#ff5000;
+	text-transform:uppercase;
+	letter-spacing:8px;
+	text-align: center;
+}
+
+.agileits_MessageBoard_right p{
+	color:#999;
+	line-height:2em;
+	margin-bottom:3em;
+}
+.agileits_MessageBoard_right p i{
+	display:block;
+	margin:2em 0 0;
+}
+.agileits_MessageBoard_right {
+    padding-left: 7em;
+}
+.agileits_MessageBoard_right ul li{
+	display: block;
+    margin-bottom: 1em;
+    color: #212121;
+    line-height: 1.5em;
+    text-transform: capitalize;
+    font-family: 'Questrial', sans-serif;
+    font-size: 1em;
+	font-weight:600;
+	letter-spacing:2px;
+}
+.agileits_MessageBoard_right ul li i{
+	color:#fa3d43;
+	padding-right:1em;
+}
+.agileits_MessageBoard_right ul li:last-child,.agileinfo_MessageBoard_bottom_right_wthree ul li:last-child{
+	margin-bottom:0;
+}
+
+.agileits_banner_bottom_grid_l h4{
+	text-transform:capitalize;
+	font-size:1.8em;
+	color:#212121;
+	line-height:1.5em;
+}
+.agileits_banner_bottom_grid_l p{
+	margin:1em 0 0;
+	line-height:2em;
+	color:#999;
+}
+.agileits_banner_bottom_grid_l p i{
+	    display: block;
+    margin-bottom: 1em;
+    color: #ff5000;
+    letter-spacing: 4px;
+    font-weight: 400;
+}
+.agileits_banner_bottom_grids{
+	margin:6em 0 0;
+}
+.agileits_banner_btm_grid_r{
+	position:relative;
+}
+.agileits_banner_btm_grid_r_pos{
+	position:absolute;
+	top: -23%;
+    right: -15%;
+}
+/*content2*/
+.banner-bottom,.graduation,.team,.Ceremony_main,.contact,.footer{
+	padding:5em 0;
+}
+.w3_agileits_banner_bottom_left,.w3_agileits_banner_bottom_right {
+    padding: 0;
+}
+.w3_agileits_banner_bottom_right{
+	background:rgba(7, 169, 106, 0.48);
+    min-height: 443px;
+	position:relative;
+}
+.w3_agileits_banner_bottom_right_pos{
+	position: absolute;
+    top: 35%;
+    left: 45%;
+    width: 100%;
+}
+.w3_agileits_banner_bottom_right_pos h3{
+	font-size: 14px;
+    text-transform: capitalize;
+    width: 35%;
+    text-align: center;
+    color: #fff;
+    padding: .5em 0;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+}
+.w3_agileits_banner_bottom_right_pos h4{
+	font-size: 1.83em;
+    color: #212121;
+    margin:.3em 0 0.5em;
+    text-transform: capitalize;
+}
+.w3_agileits_banner_bottom_right_pos p{
+	color: #000000;
+    line-height: 2em;
+    text-align: right;
+	position:relative;
+	padding-bottom:4em;
+}
+.w3_agileits_banner_bottom_right_pos a{
+	position:absolute;
+	bottom:0%;
+	right:0%;
+}
+.w3_agileits_banner_bottom_right_pos p:after{
+	content:'';
+	background:#212121;
+	height:2px;
+	width:30%;
+	position:absolute;
+	bottom:0%;
+	right:0%;
+}
+/*content3*/
+/*-- graduation --*/
+.wthree_head{
+	font-size:2em;
+	color:#212121;
+	text-align:center;
+	text-transform: capitalize;
+}
+
+.wthree_head span{
+	display: block;
+    font-size: .5em;
+    padding: .5em 0;
+    border-top: 1px solid #ff0101;
+    border-bottom: 1px solid #ff0101;
+    width: 11%;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    margin:0 0 40px 517px;
+}
+.agileinfo_graduation_grids{
+	margin:1em 0 0;
+}
+.agileinfo_graduation_grid{
+	padding:2em 1em 0;
+}
+.agileinfo_graduation_grid_right{
+	float:right;
+	width:30%;
+}
+.agileinfo_graduation_grid_left h4{
+	font-size: 1.5em;
+    color: #212121;
+    line-height: 1.5em;
+    padding-top: .3em;
+}
+.agileinfo_graduation_grid_right h4{
+	font-size: 3em;
+    color: #e4e4e4;
+	text-align:right;
+}
+.agileinfo_graduation_grid p{
+	color:#999;
+	line-height:2em;
+	margin:1em 0 0;
+}
+.agileinfo_graduation_grid .text{
+	text-indent:33em;
+}
+/*show*/
+/*-- Ceremony --*/
+.w3l_Ceremony_grid li{
+	display: inline-block;
+    float: left;
+    width: 32.33%;
+    padding: 1%;
+}
+.box {
+    position: relative;
+    overflow: hidden;
+}
+
+.box img {
+  position: absolute;
+  left: 0;
+  -webkit-transition: all 300ms ease-out;
+  -moz-transition: all 300ms ease-out;
+  -o-transition: all 300ms ease-out;
+  -ms-transition: all 300ms ease-out;
+  transition: all 300ms ease-out;
+}
+
+.box .overbox {
+	background-color: hsla(0, 0%, 11%, 0.6);
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #fff;
+    z-index: 100;
+    -webkit-transition: all 300ms ease-out;
+    -moz-transition: all 300ms ease-out;
+    -o-transition: all 300ms ease-out;
+    -ms-transition: all 300ms ease-out;
+    transition: all 300ms ease-out;
+    opacity: 0;
+    width: 100%;
+       padding: 7em 2em 2em;
+}
+.box,.box .overbox {
+	height: 230px;
+}
+.box:hover .overbox { opacity: 1; }
+
+.box .overtext {
+  -webkit-transition: all 300ms ease-out;
+  -moz-transition: all 300ms ease-out;
+  -o-transition: all 300ms ease-out;
+  -ms-transition: all 300ms ease-out;
+  transition: all 300ms ease-out;
+  transform: translateY(40px);
+  -webkit-transform: translateY(40px);
+}
+
+.box .title {
+     font-size: 1.6em;
+    text-transform: uppercase;
+    opacity: 0;
+    transition-delay: 0.1s;
+    transition-duration: 0.2s;
+    background: rgba(236, 81, 9, 0.72);
+    text-align: center;
+    padding: 10px;
+}
+
+.box:hover .title,
+.box:focus .title {
+  opacity: 1;
+  transform: translateY(0px);
+  -webkit-transform: translateY(0px);
+}
+
+.box .tagline {
+	font-size: 13px;
+    line-height:1.8em;
+	opacity: 0;
+	transition-delay: 0.2s;
+	transition-duration: 0.2s;
+}
+
+.box:hover .tagline,
+.box:focus .tagline {
+  opacity: 1;
+  transform: translateX(0px);
+  -webkit-transform: translateX(0px);
+}
+ul#lightCeremony {
+    margin-top: 2em;
+}
+.modal-content  img{
+	width:100%;
+}
+.modal-content h4 {
+    color: #0099e5;
+    text-align: center;
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+.modal-content h5 {
+    color: #000;
+    padding: 20px 0 6px;
+    font-size: 22px;
+    margin-left: 0px;
+}
+.modal-content p {
+    color: #676464;
+    font-size: 14px;
+    line-height: 28px;
+    letter-spacing: 0.2px;
+    word-spacing: 1px;
+}
+.modal-header {
+    min-height: 16.42857143px;
+    padding: 20px 30px;
+}
+ .modal-dialog {
+    width: 600px;
+    margin: 109px auto;
+}
+.agileits_MessageBoard_left h3 {
+    text-align: left;
+}
+.agileits_MessageBoard_left p {
+    text-align: left;
+}
+
+/*footer*/
+.footer{
+    text-align: center;
+    padding: 10px;
+    color: #333;
+}
+hr{
+color:#3399FF;
+height:5px;
+width: 900px;
+border:0px;
+border-top:1px solid #000;
+margin:0 0 15px 184px;
+padding:0px;
+overflow:hidden;
+}
+
+#toTop{
+    text-decoration: none;
+    position: fixed;
+    bottom: 20px;
+    right: 2%;
+    overflow: hidden;
+    z-index: 999;
+    width: 32px;
+    height: 32px;
+    border: none;
+    text-indent: 100%;
+    background: url(../images/arrow.png) no-repeat 0px 0px;
+}

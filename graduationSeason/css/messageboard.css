@@ -1,0 +1,109 @@
+body{
+	text-align: center;
+	width: 100%;
+	font-family: "微软雅黑","宋体",Arial,Verdana;
+	font-size: 12px;
+	line-height: 20px;
+	font-weight: 400;
+	background-color: #90b9d2;
+}
+body,div,ul,ol,li,h1,h2,h3,h4,h5
+h6,img,form,input,p{
+	margin: 0;
+	padding: 0;
+}
+.main{
+	width: 960px;
+	margin-right: auto;
+	margin-left: auto;
+}
+/*header*/
+.header{
+	height: 100px;
+	text-align: left;
+}
+.h_logo{
+	height: 100px;
+	width: 328px;
+	background-image: url(../images/logo.png);
+	background-repeat: no-repeat;
+}
+/*contain*/
+.contain{
+	text-align: left;
+	background-color: #fff;
+	margin-bottom: 10px;
+}
+.nav{
+	width: 960px;
+	height: 350px;
+	position: relative;
+}
+/*show*/
+.show{
+	background-color: #fff;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+.gy_show{
+	width: 960px;
+	/*height: 545px;*/
+   overflow: hidden;
+	padding: 0 20px;
+}
+
+.tit{
+border-bottom: 1px solid #efefef;
+color: #666;
+}
+.tit h3{
+	font-size: 14px;
+	font-weight: bold;
+	width: 160px;
+	padding:18px 0 6px 0;
+	display: inline-block;
+
+}
+.gy_li{
+height: 91px;
+padding-top: 6px;
+border-bottom-width: 1px;
+border-bottom-style: dashed;
+border-color: #ccc;
+color: #575757;
+}
+.gy_toux{
+float:left; 
+width: 50px;
+padding-top: 20px;
+}
+.gy_cont{
+float: right;
+width: 875px;
+}
+.cont_p{
+margin: 30px 70px 0 0;
+}
+/*footer*/
+.footer{
+	text-align: center;
+	padding: 10px;
+	color: #333;
+}
+
+#toTop{
+    text-decoration: none;
+    position: fixed;
+    bottom: 20px;
+    right: 2%;
+    overflow: hidden;
+    z-index: 999;
+    width: 32px;
+    height: 32px;
+    border: none;
+    text-indent: 100%;
+    background: url(../images/arrow.png) no-repeat 0px 0px;
+}
+
+
+
